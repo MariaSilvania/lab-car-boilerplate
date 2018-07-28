@@ -1,1 +1,29 @@
-/* Los estilos de tu proyecto */
+body{
+  background-color: #f7b617;
+}
+.main{
+  background-image: url(../assets/images/taxi.jpg);
+  width: 100vw;
+  height: 110vh;
+  background-repeat: no-repeat;
+  background-size: 100vw;
+  padding: 0px;
+}
+
+.hr{
+  display: flex;
+  flex-direction: row;
+}
+hr{
+  width: 100px;
+}
+.formulario{
+  background-color: #f7b617;
+  height: 70vh;
+  margin-top: 100px;
+  margin-right: 0px;
+  padding: 20px;
+}
+/* button{
+  border-radius: 10%;
+} */
