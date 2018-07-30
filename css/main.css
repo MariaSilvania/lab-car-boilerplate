@@ -132,6 +132,9 @@ footer nav{
   flex-direction: row;
   align-items:flex-end;
 }
+span{
+  margin-left: 5px;
+}
 .baixar img{
   margin: 10px;
 }
