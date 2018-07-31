@@ -248,12 +248,13 @@ select{
     background-color: #f7b617;
     width: 71vw;
     height: 20vh;
-    padding: 10px;
-    padding-left: 19px;
+    padding: 11px;
+    padding-left: 10px;
   }
   .formularioMobile input{
     width: 123px;
     border: 0px;
+    height: 30px;
   }
   .iPhone{
     padding: 45px;
