@@ -104,6 +104,10 @@ hr{
   align-items: center;
   justify-content: space-around;
 }
+iframe{
+  width: 500px;
+  height: 300px;
+}
 .divTarifa{
   width: 400px;
   margin: 0px;
@@ -219,7 +223,7 @@ select{
 @media screen and (max-width: 576px) {
   body{
     display: grid;
-    grid-template-rows: 55px 200px 400px 400px 400px 400px;
+    grid-template-rows: 55px 200px 330px 242px 500px 400px;
     grid-template-columns: 1fr;
     grid-template-areas: "header"
                          "main"
@@ -229,9 +233,60 @@ select{
                          "footer";
   }
   main{
-    height: 188px;
+    height: 209px;
   }
   .formulario{
     display: none;
   }
+  .iPhone{
+    padding: 41px;
+  }
+  .iPhoneTexto{
+    display: none;
+  }
+  .iPhone img{
+    height: 250px;
+    width: 270px;
+    padding: 40px;
+    border: 1px solid #fff;
+  }
+  .conduce{
+    height: 242px;
+  }
+  .tarifas{
+    flex-direction: column;
+  }
+  iframe{
+    width:300px;
+    height: 200px;
+  }
+  .divTarifa{
+    width: 337px;
+    padding: 18px;
+  }
+  .linha{
+    flex-wrap: nowrap;
+  }
+  .divTarifa input{
+    width: 250px;
+    padding: 5px;
+    margin: 0px;
+    background-color: #f7b617;
+    border: 1px solid #fff;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+  .segundaLista{
+  display: none;
+  }
+  .icones1 {
+    align-items: end;
+    height: 20px;
+  }
+  .baixar {
+    justify-content: center;
+    height: 40px;
+  }
+  ul {
+    order: -1;
 }
