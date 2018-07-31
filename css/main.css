@@ -1,8 +1,13 @@
 body{
   display: grid;
   grid-template-rows: 55px 592px 400px 400px 400px 400px;
-  grid-template-columns: 1fr;
-  grid-template-areas: "header" "main" "phone" "conduce" "tarifa" "footer";
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "header header"
+                       "main main"
+                       "phone phone"
+                       "conduce conduce"
+                       "tarifa tarifa"
+                       "footer footer";
 }
 header{
   grid-area: header;
@@ -10,7 +15,6 @@ header{
 main{
   grid-area: main;
   background-image: url(../assets/images/taxi.jpg);
-  width: 100vw;
   height: 592px;
   background-repeat: no-repeat;
   background-size: 100vw;
@@ -213,5 +217,21 @@ select{
 }
 
 @media screen and (max-width: 576px) {
-
+  body{
+    display: grid;
+    grid-template-rows: 55px 200px 400px 400px 400px 400px;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header"
+                         "main"
+                         "phone"
+                         "conduce"
+                         "tarifa"
+                         "footer";
+  }
+  main{
+    height: 188px;
+  }
+  .formulario{
+    display: none;
+  }
 }
