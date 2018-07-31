@@ -23,10 +23,10 @@
                 <a class="nav-link text-muted" href="#tarifa">Viaja<span class="sr-only"></span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-muted" href="#conduce">Conduce</a>
+                <a class="nav-link text-muted" href="#conduce" data-toggle="modal" data-target="#modalCondutor">Conduce</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link text-muted" href="#sesion">Inicia sesión</a>
+                <a class="nav-link text-muted" href="#" data-toggle="modal" data-target="#modalSessao">Inicia sesión</a>
               </li>
             </ul>
           </div>
@@ -38,17 +38,24 @@
         <h3>Disfruta del viaje</h3>
         <h3>Eres duenõ de tu tiempo</h3>
         <h5>Viaja com <img src="assets/images/logoBlanco.png" width="70px" alt="shape2"></h5>
-        <input type="button" class="buttonRegistrate button" value="REGISTRATE" data-toggle="modal" data-target="#modalSessao">
+        <input type="button" class="buttonRegistrate button" value="REGISTRATE" data-toggle="modal" data-target="#modalRegistro">
         <section class="hr">
           <hr>
           <p>O bien</p>
           <hr>
         </section>
-        <input type="button" class="buttonConviertete button" value="Conviértete en um conductor" data-toggle="modal" data-target="#modalRegistro">
+        <input type="button" class="buttonConviertete button" value="Conviértete en um conductor" data-toggle="modal" data-target="#modalCondutor">
+      </article>
+      <article class="formularioMobile">
+        <h3>Comienza a viajar com
+        <img src="assets/images/logoBlanco.png" width="70px" alt="shape2"></h3>
+        <input type="button" class="buttonRegistrate button" value="Descarga el app">
       </article>
     </main>
-   <section class="iPhone">
+     <section class="iPhone">
+      <h4>La nueva app</h4>
       <img src="assets/images/iPhone6Plus.png" width="300px" alt="iPhone 6 Plus">
+      <p class="pMobile">Llega a tu destino aún más rápido</p>
       <div class="iPhoneTexto">
         <h3>Descarga la nueva app</h3>
         <p>La versión actualizada de LabCar está llena de nuevas funciones para llegar a donde quieras aún más fácil y rápido</p>
@@ -176,7 +183,9 @@
               <input type="text" placeholder="contraseña">
               <input type="text" placeholder="Ciudad">
               <input type="text" placeholder="(Opcional) Código de invitacion">
-              <input type="text" placeholder="Como te enteraste de nosotros?">
+              <select>
+              <option value="Como te enteraste de nosotros">Como te enteraste de nosotros?</option>
+              </select>
               <input type="button" data-dismiss="modal" value="Enviar" class="bg-primary text-white">
             </form>
           </div>

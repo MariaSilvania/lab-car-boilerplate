@@ -1,13 +1,13 @@
 body{
   display: grid;
   grid-template-rows: 55px 592px 400px 400px 400px 400px;
-  grid-template-columns: 1fr 1fr;
-  grid-template-areas: "header header"
-                       "main main"
-                       "phone phone"
-                       "conduce conduce"
-                       "tarifa tarifa"
-                       "footer footer";
+  grid-template-columns: 1fr;
+  grid-template-areas: "header"
+                       "main"
+                       "phone"
+                       "conduce"
+                       "tarifa"
+                       "footer";
 }
 header{
   grid-area: header;
@@ -44,6 +44,9 @@ hr{
   height: 60vh;
   padding: 55px;
 }
+.formularioMobile{
+  display: none;
+}
 .button{
   border-radius: 5px;
   background-color: #fff;
@@ -62,7 +65,14 @@ hr{
   flex-direction: row;
   padding: 50px 60px 50px 100px;
 }
+.iPhone h4{
+  display: none;
+}
+.pMobile{
+  display: none;
+}
 .iPhoneTexto{
+  display: block;
   width: 386px;
   padding-left: 100px;
   font-size: 18px;
@@ -199,6 +209,10 @@ ul{
 .fundoModalRegistro .nameApelido input{
   width: 14.5vw;
 }
+.fundoModalRegistro select{
+  width: 30vw;
+  background-color: #d9d9d9;
+}
 .fundoModalCondutor{
   width: 45vw;
   display: flex;
@@ -222,15 +236,7 @@ select{
 
 @media screen and (max-width: 576px) {
   body{
-    display: grid;
     grid-template-rows: 55px 200px 330px 242px 500px 400px;
-    grid-template-columns: 1fr;
-    grid-template-areas: "header"
-                         "main"
-                         "phone"
-                         "conduce"
-                         "tarifa"
-                         "footer";
   }
   main{
     height: 209px;
@@ -238,8 +244,32 @@ select{
   .formulario{
     display: none;
   }
+  .formularioMobile{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: #f7b617;
+    flex-wrap: wrap;
+    width: 79vw;
+    height: 20vh;
+    padding: 10px;
+    padding-left: 20px;
+  }
+  .formularioMobile input{
+    width: 135px;
+    border: 0px;
+  }
   .iPhone{
-    padding: 41px;
+    padding: 45px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .iPhone h4{
+    display:block;
+  }
+  .pMobile{
+    display: block;
   }
   .iPhoneTexto{
     display: none;
@@ -269,12 +299,6 @@ select{
   }
   .divTarifa input{
     width: 250px;
-    padding: 5px;
-    margin: 0px;
-    background-color: #f7b617;
-    border: 1px solid #fff;
-    margin-bottom: 10px;
-    border-radius: 5px;
   }
   .segundaLista{
   display: none;
