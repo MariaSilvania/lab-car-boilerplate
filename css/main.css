@@ -281,12 +281,16 @@ select{
   }
   .icones1 {
     align-items: end;
-    height: 20px;
   }
   .baixar {
-    justify-content: center;
-    height: 40px;
+    position: absolute;
+    right: 35px;
+    margin-top: 37px;
   }
   ul {
     order: -1;
+  }
+  footer{
+    width: 360px;
+  }
 }
