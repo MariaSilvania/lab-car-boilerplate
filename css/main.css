@@ -317,4 +317,35 @@ select{
   footer{
     width: 360px;
   }
+  .fundoModal{
+    width: 343px;
+  }
+  #modalSessao img {
+    margin-left: 56px;
+  }
+  .fundoModalCondutor {
+    width: 96vw;
+  }
+  select {
+    width: 84vw;
+  }
+  .fundoModalCondutor input {
+    width: 84vw;
+  }
+  .fundoModalRegistro {
+    width: 96vw;
+  }
+  .fundoModalRegistro input {
+    width: 84vw;
+  }
+  .fundoModalRegistro select {
+    width: 84vw;
+  }
+  .fundoModalRegistro .nameApelido input {
+    width: 41.7vw;
+  }
+  .inverterMenu{
+    padding-right: 165px !important;
+    flex-direction: row-reverse;
+  }
 }
