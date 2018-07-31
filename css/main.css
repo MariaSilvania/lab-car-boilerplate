@@ -99,12 +99,11 @@ hr{
   justify-content: center;
   padding: 0px 20px 0px 20px;
 }
-
 .botao{
-    width: 200px;
-    border-radius: 5px;
-    padding: 5px;
-    border: 0px;
+  width: 200px;
+  border-radius: 5px;
+  padding: 5px;
+  border: 0px;
 }
 .tarifas{
   background-color: #f7b617;
@@ -219,7 +218,7 @@ ul{
   flex-direction: column;
   justify-content: center;
   background-color: #C1C1C1;
-padding: 5px;
+  padding: 5px;
 }
 .fundoModalCondutor input{
   margin-bottom: 10px;
@@ -233,7 +232,6 @@ select{
   width: 40vw;
   height: 5vh;
 }
-
 @media screen and (max-width: 576px) {
   body{
     grid-template-rows: 55px 200px 330px 242px 500px 400px;
@@ -247,16 +245,14 @@ select{
   .formularioMobile{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     background-color: #f7b617;
-    flex-wrap: wrap;
-    width: 79vw;
+    width: 71vw;
     height: 20vh;
     padding: 10px;
-    padding-left: 20px;
+    padding-left: 19px;
   }
   .formularioMobile input{
-    width: 135px;
+    width: 123px;
     border: 0px;
   }
   .iPhone{
@@ -345,7 +341,7 @@ select{
     width: 41.7vw;
   }
   .inverterMenu{
-    padding-right: 165px !important;
+    padding-right: 10rem !important;
     flex-direction: row-reverse;
   }
 }
