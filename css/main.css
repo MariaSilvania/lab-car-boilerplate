@@ -270,7 +270,7 @@ select {
   height: 5vh;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 676px) {
   body {
     grid-template-rows: 55px 200px 330px 242px 500px 400px;
   }
