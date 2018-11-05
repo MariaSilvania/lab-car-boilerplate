@@ -1,18 +1,20 @@
-body{
+body {
   display: grid;
   grid-template-rows: 55px 592px 400px 400px 400px 400px;
   grid-template-columns: 1fr;
   grid-template-areas: "header"
-                       "main"
-                       "phone"
-                       "conduce"
-                       "tarifa"
-                       "footer";
+    "main"
+    "phone"
+    "conduce"
+    "tarifa"
+    "footer";
 }
-header{
+
+header {
   grid-area: header;
 }
-main{
+
+main {
   grid-area: main;
   background-image: url(../assets/images/taxi.jpg);
   height: 592px;
@@ -22,20 +24,24 @@ main{
   margin: 0px;
   display: flex;
   justify-content: flex-end;
-  align-items:center;
+  align-items: center;
 }
-hr{
+
+hr {
   background-color: #fff;
 }
-.hr{
+
+.hr {
   display: flex;
   flex-direction: row;
   width: 319px;
 }
-.formulario hr{
+
+.formulario hr {
   width: 120px;
 }
-.formulario{
+
+.formulario {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -44,40 +50,49 @@ hr{
   height: 60vh;
   padding: 55px;
 }
-.formularioMobile{
+
+.formularioMobile {
   display: none;
 }
-.button{
+
+.button {
   border-radius: 5px;
   background-color: #fff;
   padding: 3px;
 }
-.buttonRegistrate{
+
+.buttonRegistrate {
   width: 100px;
 }
-.buttonConviertete{
+
+.buttonConviertete {
   width: 240px;
 }
-.iPhone{
+
+.iPhone {
   background-color: #f7b617;
   grid-area: phone;
   display: flex;
   flex-direction: row;
   padding: 50px 60px 50px 100px;
 }
-.iPhone h4{
+
+.iPhone h4 {
   display: none;
 }
-.pMobile{
+
+.pMobile {
   display: none;
 }
-.iPhoneTexto{
+
+.iPhoneTexto {
   display: block;
   width: 386px;
   padding-left: 100px;
   font-size: 18px;
 }
-.conduce{
+
+.conduce {
   grid-area: conduce;
   background-image: url(../assets/images/conduce.jpg);
   width: 100vw;
@@ -88,24 +103,23 @@ hr{
   display: flex;
   justify-content: flex-end;
 }
+
 .transparencia {
-  background-color: #262626;
-  filter:alpha(opacity=50);
-  opacity: 0.5;
-  -moz-opacity:0.5;
-  -webkit-opacity:0.5;
-  display:flex;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
   flex-direction: column;
   justify-content: center;
   padding: 0px 20px 0px 20px;
 }
-.botao{
+
+.botao {
   width: 200px;
   border-radius: 5px;
   padding: 5px;
   border: 0px;
 }
-.tarifas{
+
+.tarifas {
   background-color: #f7b617;
   grid-area: tarifa;
   display: flex;
@@ -113,21 +127,25 @@ hr{
   align-items: center;
   justify-content: space-around;
 }
-iframe{
+
+iframe {
   width: 500px;
   height: 300px;
 }
-.divTarifa{
+
+.divTarifa {
   width: 400px;
   margin: 0px;
   font-size: 17px;
 }
-.buttonTarifa{
+
+.buttonTarifa {
   background-color: #fff;
   border-radius: 3px;
   border: 0px;
 }
-.divTarifa input{
+
+.divTarifa input {
   width: 300px;
   padding: 5px;
   background-color: #f7b617;
@@ -135,58 +153,70 @@ iframe{
   margin-bottom: 10px;
   border-radius: 5px;
 }
-footer{
+
+footer {
   background-color: #2b2b2b;
   grid-area: footer;
   padding: 20px 40px 20px 40px;
 }
-footer nav{
+
+footer nav {
   display: flex;
   justify-content: space-around;
 }
-.icones1{
+
+.icones {
   display: flex;
   flex-direction: row;
-  align-items:flex-end;
+  align-items: flex-end;
 }
-span{
+
+span {
   margin-left: 5px;
 }
-.baixar img{
+
+.baixar img {
   margin: 10px;
 }
-.baixar{
+
+.baixar {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
 }
-ul{
+
+ul {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
-#modalSessao img{
+
+#modalSessao img {
   width: 200px;
   height: 150px;
   object-fit: cover;
   margin-left: 30px;
 }
-.fundoModal{
+
+.fundoModal {
   background-color: #08AC9D;
   width: 300px;
 }
-.modalTexto{
+
+.modalTexto {
   background-color: #fff;
   color: #000;
   margin: 15px;
   padding: 19px;
   text-align: center;
 }
-#login input{
+
+#login input {
   margin-bottom: 10px;
   border-radius: 5px;
 }
-.fundoModalRegistro{
+
+.fundoModalRegistro {
   width: 34vw;
   display: flex;
   flex-direction: column;
@@ -194,25 +224,30 @@ ul{
   background-color: #C1C1C1;
   padding: 5px;
 }
-.fundoModalRegistro input{
+
+.fundoModalRegistro input {
   margin-bottom: 10px;
   border-radius: 5px;
   width: 30vw;
 }
-.fundoModalRegistro .nameApelido{
+
+.fundoModalRegistro .nameApelido {
   width: 30vw;
   display: flex;
   flex-direction: row;
-  justify-content:space-between;
+  justify-content: space-between;
 }
-.fundoModalRegistro .nameApelido input{
+
+.fundoModalRegistro .nameApelido input {
   width: 14.5vw;
 }
-.fundoModalRegistro select{
+
+.fundoModalRegistro select {
   width: 30vw;
   background-color: #d9d9d9;
 }
-.fundoModalCondutor{
+
+.fundoModalCondutor {
   width: 45vw;
   display: flex;
   flex-direction: column;
@@ -220,29 +255,35 @@ ul{
   background-color: #C1C1C1;
   padding: 5px;
 }
-.fundoModalCondutor input{
+
+.fundoModalCondutor input {
   margin-bottom: 10px;
   border-radius: 5px;
   width: 40vw;
   height: 5vh;
 }
-select{
+
+select {
   margin-bottom: 10px;
   border-radius: 5px;
   width: 40vw;
   height: 5vh;
 }
+
 @media screen and (max-width: 576px) {
-  body{
+  body {
     grid-template-rows: 55px 200px 330px 242px 500px 400px;
   }
-  main{
+
+  main {
     height: 209px;
   }
-  .formulario{
+
+  .formulario {
     display: none;
   }
-  .formularioMobile{
+
+  .formularioMobile {
     display: flex;
     flex-direction: column;
     background-color: #f7b617;
@@ -251,97 +292,124 @@ select{
     padding: 11px;
     padding-left: 10px;
   }
-  .formularioMobile input{
+
+  .formularioMobile input {
     width: 123px;
     border: 0px;
     height: 30px;
   }
-  .iPhone{
+
+  .iPhone {
     padding: 45px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .iPhone h4{
-    display:block;
-  }
-  .pMobile{
+
+  .iPhone h4 {
     display: block;
   }
-  .iPhoneTexto{
+
+  .pMobile {
+    display: block;
+  }
+
+  .iPhoneTexto {
     display: none;
   }
-  .iPhone img{
+
+  .iPhone img {
     height: 250px;
     width: 270px;
     padding: 40px;
     border: 1px solid #fff;
   }
-  .conduce{
+
+  .conduce {
     height: 242px;
   }
-  .tarifas{
+
+  .tarifas {
     flex-direction: column;
   }
-  iframe{
-    width:300px;
+
+  iframe {
+    width: 300px;
     height: 200px;
   }
-  .divTarifa{
+
+  .divTarifa {
     width: 337px;
     padding: 18px;
   }
-  .linha{
+
+  .linha {
     flex-wrap: nowrap;
   }
-  .divTarifa input{
+
+  .divTarifa input {
     width: 250px;
   }
-  .segundaLista{
-  display: none;
+
+  .segundaLista {
+    display: none;
   }
-  .icones1 {
+
+  .icones {
     align-items: end;
   }
+
   .baixar {
     position: absolute;
     right: 35px;
     margin-top: 37px;
   }
+
   ul {
     order: -1;
   }
-  footer{
+
+  footer {
     width: 360px;
   }
-  .fundoModal{
+
+  .fundoModal {
     width: 343px;
   }
+
   #modalSessao img {
     margin-left: 56px;
   }
+
   .fundoModalCondutor {
     width: 96vw;
   }
+
   select {
     width: 84vw;
   }
+
   .fundoModalCondutor input {
     width: 84vw;
   }
+
   .fundoModalRegistro {
     width: 96vw;
   }
+
   .fundoModalRegistro input {
     width: 84vw;
   }
+
   .fundoModalRegistro select {
     width: 84vw;
   }
+
   .fundoModalRegistro .nameApelido input {
     width: 41.7vw;
   }
-  .inverterMenu{
+
+  .inverterMenu {
     padding-right: 10rem !important;
     flex-direction: row-reverse;
   }
